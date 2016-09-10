@@ -328,13 +328,14 @@ html {
 .page3 .content p {
     margin: 0 auto;
     padding: 0 .1rem;
-    border: 1px dashed transparent;
+    border: 1.5px dashed yellowgreen;
     border-radius: .1rem;
     width: 1.92rem;
     line-height: .8rem;
     background: lemonchiffon;
 }
 
+/*
 .page3 .content p i {
     position: absolute;
     top: .22rem;
@@ -342,6 +343,7 @@ html {
     height: .42rem;
     background: burlywood;
 }
+*/
 
 .page3 .content p :nth-child(1) {
     background: url("../img/self1/page3-1.png") no-repeat;
@@ -396,10 +398,10 @@ html {
     animation: rollIn 1s linear .9s 1 both;
 }
 
-#page3 .content p i {
+/*#page3 .content p i {
     -webkit-animation: rollIn 2s linear .9s 1;
     animation: rollIn 1s linear .9s 1;
-}
+}*/
 
 #page3 .content li > img {
     -webkit-animation: photoRotate 2s linear 1.5s 1 both;
@@ -555,7 +557,7 @@ html {
 }
 
 #page4 .content ul {
-    -webkit-animation: musicMove 2.5s linear 1s 1 both;
+    -webkit-animation: musicMove 1s linear 2.5s 1 both;
     animation: musicMove 1s linear 2.5s 1 both;
 }
 
