@@ -147,6 +147,7 @@ html {
     position: relative;
     background: url("../img/2.jpg") no-repeat #dafaf4;
     background-size: cover;
+
 }
 
 .page2 img {
@@ -181,11 +182,12 @@ html {
     border-radius: .25rem;
     width: 2.47rem;
     height: 2.47rem;
+    opacity: 0;
+
 }
 
 .page2 .contentList .cover {
     z-index: 9;
-    opacity: 0.6;
     background: papayawhip;
 }
 
@@ -210,6 +212,7 @@ html {
 
 .page2 ul li {
     position: relative;
+    opacity: 0;
 }
 
 .page2 ul li img:nth-child(1) {
@@ -251,11 +254,13 @@ html {
     -webkit-animation: zoomIn 1s linear 0s 1 both;
     animation: zoomIn 1s linear 0s 1 both;
 }
-
+#page2 .box{
+    opacity: 1;
+}
 #page2 .cover {
-
-    -webkit-animation: musicMove 2s linear .2s infinite forwards;
-    animation: musicMove 2s linear .2s infinite forwards;
+    opacity: 1;
+    -webkit-animation: musicMove 2s linear 1.5s infinite forwards;
+    animation: musicMove 2s linear 1.5s infinite forwards;
 }
 
 #page2 h3 {
@@ -309,11 +314,13 @@ html {
     line-height: .8rem;
     color: #999999;
     font-size: .5rem;
+    opacity: 0;
 }
 
 .page3 .header span {
     font-size: .34rem;
     color: #999999;
+    opacity: 0;
 }
 
 .page3 .content {
@@ -323,6 +330,7 @@ html {
     text-align: center;
     font-size: .35rem;
     /*background: yellow;*/
+    opacity: 0;
 }
 
 .page3 .content p {
@@ -392,7 +400,9 @@ html {
     -webkit-animation: Myflash 1s linear .6s 1 both;
     animation: Myflash 1s linear .6s 1 both;
 }
-
+#page3 .content{
+    opacity: 1;
+}
 #page3 .content p {
     -webkit-animation: rollIn 1s linear .9s 1 both;
     animation: rollIn 1s linear .9s 1 both;
@@ -450,11 +460,13 @@ html {
     line-height: .8rem;
     color: #999999;
     font-size: .5rem;
+    opacity: 0;
 }
 
 .page4 .header span {
     font-size: .34rem;
     color: #999999;
+    opacity: 0;
 }
 
 .page4 .content {
@@ -462,6 +474,7 @@ html {
     text-align: center;
     font-size: .2rem;
     /*background: yellow;*/
+    opacity: 0;
 }
 
 .page4 .content ul {
@@ -545,7 +558,9 @@ html {
     -webkit-animation: Myflash 1s linear .6s 1 both;
     animation: Myflash 1s linear .6s 1 both;
 }
-
+#page4 .content{
+    opacity: 1;
+}
 #page4 .content li {
     -webkit-animation: fadeIn 1s linear .6s 1 both;
     animation: fadeIn 1s linear .6s 1 both;
@@ -602,11 +617,13 @@ html {
     line-height: .8rem;
     color: #999999;
     font-size: .5rem;
+    opacity: 0;
 }
 
 .page5 .header span {
     font-size: .34rem;
     color: #999999;
+    opacity: 0;
 }
 
 .page5 .content {
@@ -615,6 +632,7 @@ html {
     text-align: center;
     font-size: .2rem;
     background: yellow;
+    opacity: 0;
 }
 
 .page5 .content div {
@@ -695,7 +713,9 @@ html {
     -webkit-animation: Myflash 1s linear .6s 1 both;
     animation: Myflash 1s linear .6s 1 both;
 }
-
+#page5 .content{
+    opacity: 1;
+}
 #page5 .content div {
     -webkit-animation: bounceInRight 1s linear .9s 1 both;
     animation: bounceInRight 1s linear .9s 1 both;
@@ -752,11 +772,13 @@ html {
     line-height: .8rem;
     color: #999999;
     font-size: .5rem;
+    opacity: 0;
 }
 
 .page6 .header span {
     font-size: .34rem;
     color: #999999;
+    opacity: 0;
 }
 
 .page6 .content {
@@ -767,6 +789,7 @@ html {
     line-height: 1rem;
     /*background: yellow;*/
     color: #A9ADEE;
+    opacity: 0;
 }
 
 .page6 .content span.first {
@@ -796,16 +819,20 @@ html {
     animation: zoomIn .5s linear 0s 1 both;
 }
 
-#page6.header h2 {
+#page6 .header h2 {
+    opacity: 1;
     -webkit-animation: rollIn 1s linear .3s 1 both;
     animation: rollIn 1s linear .3s 1 both;
 }
 
 #page6 .header span {
+    opacity: 1;
     -webkit-animation: Myflash 1s linear .6s 1 both;
     animation: Myflash 1s linear .6s 1 both;
 }
-
+#page6 .content{
+    opacity: 1;
+}
 #page6 .content .tel,#page6 .content span.second {
     -webkit-animation: bounceInLeft 2s linear .6s 1 both;
     animation: bounceInLeft 2s linear .6s 1 both;
@@ -1143,7 +1170,7 @@ html {
 }
 
 @-webkit-keyframes Myflash {
-    from, 50%, to {
+   50%, to {
         opacity: 1;
 
     }
@@ -1153,19 +1180,19 @@ html {
         color: greenyellow;
     }
 
-    25%, 75% {
-        opacity: 0;
+   0%, 25%, 75% {
+        opacity: 1;
         color: burlywood;
     }
 }
 
 @keyframes Myflash {
-    from, 50%, to {
+     50%, to {
         opacity: 1;
 
     }
 
-    12.5%, 37.5%, 62.5%, 87.5% {
+   0%, 12.5%, 37.5%, 62.5%, 87.5% {
         opacity: .5;
         color: greenyellow;
     }
