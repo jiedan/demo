@@ -688,8 +688,9 @@ html {
 .page5 .content ul li p {
     position: absolute;
     top: 1.6rem;
-    left: .9rem;
+    left: 0.5rem;
     opacity: 0;
+    width: 4.2rem;
 }
 
 .page5 .content ul li.second p {
